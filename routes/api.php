@@ -20,5 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 //http://localhost:8000/api/prueba
 Route::get("/prueba",function(){
-    return \App\Models\Producto::get();
+    return \App\Models\Producto::all();
 });
