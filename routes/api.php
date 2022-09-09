@@ -22,3 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get("/prueba",function(){
     return \App\Models\Producto::all();
 });
+
+Route::get('productos', [App\Http\Controllers\ProductoController::class, 'index']);
